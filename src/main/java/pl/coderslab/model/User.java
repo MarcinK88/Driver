@@ -1,10 +1,13 @@
 package pl.coderslab.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity(name = "users")
 @Table(name = "admins")
+@Data
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

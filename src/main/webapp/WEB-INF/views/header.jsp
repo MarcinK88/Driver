@@ -270,10 +270,13 @@
                 <ul class="nav" id="side-menu">
 
                     <li>
-                        <a href="#"><i class="fa fa-dashboard fa-fw"></i> Sample</a>
+                        <a href="/admin/users"><i class="fa fa-dashboard fa-fw"></i> Users</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="/admin/advices"><i class="fa fa-dashboard fa-fw"></i> Advices</a>
+                    </li>
+                    <li>
+                        <a href="/admin/tags"><i class="fa fa-dashboard fa-fw"></i> Tags</a>
                     </li>
 
                 </ul>
