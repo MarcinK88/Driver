@@ -20,14 +20,9 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
-        return "index";
+        return "redirect:swagger-ui.html";
     }
 
-    @GetMapping("/admin")
-    @ResponseBody
-    public String admin() {
-        return "admin";
-    }
 
     @GetMapping("/create-user")
     @ResponseBody
