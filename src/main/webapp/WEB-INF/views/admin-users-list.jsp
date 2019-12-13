@@ -13,6 +13,7 @@
 
     <!-- /.row -->
     <div class="row">
+            <a class="btn btn-primary" href="/admin/users/add">add new user</a>
 
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -36,7 +37,10 @@
                                 <td>${user.id}</td>
                                 <td>${user.username}</td>
                                 <td>${user.enabled}</td>
-                                <td><a class="confirm btn btn-success" href="/admin/users/remove/${user.id}">delete</a></td>
+                                <td><a class="confirm btn btn-danger" href="/admin/users/remove/${user.id}">delete</a>
+                                    <a class="btn btn-success" href="/admin/users/edit/${user.id}">edit</a>
+                                    <a class="btn btn-warning" href="/admin/users/password/${user.id}">change password</a>
+                                    </td>
                             </tr>
                         </c:forEach>
                         </tbody>

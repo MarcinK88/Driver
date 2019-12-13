@@ -32,6 +32,14 @@ public class AdminController {
         model.addAttribute("users", page);
         return "admin-users-list";
     }
+
+    @GetMapping("/users/add")
+    public String addUser(Model model) {
+        model.addAttribute("user", new User());
+        return "admin-users-add";
+    }
+
+
     @GetMapping("/advices")
     public String adminAdvices() {
         return "admin-advices-list";

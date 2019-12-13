@@ -1,6 +1,6 @@
 $(document).on("click", "a.confirm", function(e) {
     e.preventDefault();
-    if (confirm('Czy jesteś pewien ?')) {
+    if (confirm('Are you sure?')) {
         location.href = $(this).attr('href');
     }
 });
