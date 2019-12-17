@@ -22,6 +22,7 @@ public class Advice {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
     private Long recommends;
+    private String description;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(name = "advice_tag", joinColumns = @JoinColumn(name = "advice_id"),
