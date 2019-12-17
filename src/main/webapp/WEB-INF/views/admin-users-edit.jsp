@@ -15,23 +15,27 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                Add new user
+                Edit user
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form:form modelAttribute="user" >
                     <div class="form-group">
+                        <form:hidden path="id"/>
+                        <form:hidden path="password"/>
                         <label>Username:</label>
                         <form:input path="username" cssClass="form-control"/>
                         <form:errors path="username" cssClass="error"/>
                     </div>
                     <div class="form-group">
-                        <label>Password:</label>
-                        <form:input path="password" type="password" cssClass="form-control"/>
-                        <form:errors path="password" cssClass="error"/>
+                        <label>Enabled:</label>
+                            <form:select path="enabled" id="enabled" cssClass="form-control">
+                                <form:option value="true" />
+                                <form:option value="false"/>
+                            </form:select>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-default">Add user</button>
+                        <button type="submit" class="btn btn-default">Save</button>
                     </div>
                 </form:form>
 
